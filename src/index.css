@@ -1,0 +1,148 @@
+/* Reset styles to remove default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Global styles */
+body {
+  background-color: #a79d9d;
+}
+
+.form-main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Form styles */
+form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+form input[type="file"] {
+  margin: 1rem 0;
+}
+
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="tel"]:hover,
+form textarea:hover {
+  background-color: #e6e6e6;
+}
+
+form input[type="file"]:hover {
+  cursor: pointer;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #2c773b;
+}
+
+/* Validation styles */
+form input:invalid,
+form textarea:invalid {
+  border-color: red;
+}
+
+form input:valid,
+form textarea:valid {
+  border-color: #4caf50;
+}
+
+form input:invalid:focus,
+form textarea:invalid:focus {
+  border-color: red;
+}
+
+form input:valid:focus,
+form textarea:valid:focus {
+  border-color: #4caf50;
+}
+/* Submit button styles */
+form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+  background-color: #2c773b;
+}
+
+form button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Add these styles to change the button width and center it */
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+}
